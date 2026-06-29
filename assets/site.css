@@ -114,14 +114,14 @@ section{position:relative}
 .device-wrap{position:relative; display:flex; justify-content:center}
 .device-wrap::after{content:""; position:absolute; left:50%; transform:translateX(-50%); bottom:-26px; width:62%; height:50px;
   background:radial-gradient(ellipse at center, rgba(15,27,46,.22), transparent 70%); filter:blur(4px)}
-.device{position:relative; width:300px; max-width:78vw; aspect-ratio:300/620; border-radius:46px; padding:13px;
+.device{position:relative; width:300px; max-width:78vw; border-radius:46px; padding:13px;
   background:linear-gradient(155deg,#2b3a4d,#0b1422); box-shadow:var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.06)}
 .device .notch{position:absolute; top:20px; left:50%; transform:translateX(-50%); width:108px; height:30px; background:#05070c; border-radius:18px; z-index:6}
-.screen{position:relative; width:100%; height:100%; border-radius:34px; overflow:hidden; background:var(--paper);
+.screen{position:relative; width:100%; border-radius:34px; overflow:hidden; background:var(--paper);
   font-family:"Nunito",-apple-system,sans-serif; color:var(--navy)}
-.screen .sbar{position:relative; z-index:5; display:flex; justify-content:space-between; align-items:center; padding:12px 20px 4px; font-size:12px; font-weight:800; color:var(--navy)}
+.screen .sbar{position:relative; z-index:5; display:flex; justify-content:space-between; align-items:center; padding:12px 22px 4px; font-size:12px; font-weight:800; color:var(--navy)}
 .screen .sbar .rgt{display:flex; gap:5px; align-items:center; font-size:11px}
-.scr-body{padding:6px 13px 16px; height:calc(100% - 34px); overflow:hidden}
+.scr-body{padding:6px 13px 18px}
 
 /* generic app cards inside screen */
 .s-title-card{background:linear-gradient(160deg,#16304a,#0f1b2e); color:#fff; border-radius:20px; padding:14px 15px; position:relative; overflow:hidden}
@@ -131,19 +131,20 @@ section{position:relative}
 .s-title-card .rb{position:absolute; right:8px; top:8px; width:42px; height:42px; border-radius:50%; object-fit:cover}
 
 /* weather hero card */
-.wx{position:relative; height:150px; border-radius:18px; overflow:hidden; margin-top:10px; color:#fff; box-shadow:var(--shadow-soft)}
-.wx .sky{position:absolute; inset:0; background:linear-gradient(180deg,#5E6E80,#95A4B4)}
+.wx{position:relative; height:162px; border-radius:18px; overflow:hidden; margin-top:10px; color:#fff; box-shadow:var(--shadow-soft);
+  display:flex; flex-direction:column; justify-content:space-between; padding:11px 13px}
+.wx .sky{position:absolute; inset:0; z-index:0; background:linear-gradient(180deg,#6B7A8C,#9aa9b8)}
 .wx.sunny .sky{background:linear-gradient(180deg,#3E86D6,#8FC2F0)}
-.wx .sun{position:absolute; right:30px; top:24px; width:58px; height:58px; border-radius:50%;
+.wx .sun{position:absolute; right:30px; top:24px; z-index:1; width:58px; height:58px; border-radius:50%;
   background:radial-gradient(circle,#fff,#FFE08A); box-shadow:0 0 34px rgba(255,224,138,.7)}
-.wx .cloud{position:absolute; border-radius:50%; background:rgba(255,255,255,.92); filter:blur(1px)}
-.wx .c1{width:78px;height:78px; right:26px; top:6px}
-.wx .c2{width:54px;height:54px; right:74px; top:20px; background:rgba(255,255,255,.8)}
-.wx .c3{width:60px;height:60px; right:10px; top:30px; background:rgba(255,255,255,.82)}
-.wx .scrim{position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.28),transparent 40%,rgba(0,0,0,.42))}
-.wx .top{position:absolute; left:13px; right:13px; top:11px; z-index:2; display:flex; justify-content:space-between; font-size:11px; font-weight:800}
-.wx .top .pin{display:inline-flex; align-items:center; gap:4px}
-.wx .bot{position:absolute; left:13px; right:13px; bottom:12px; z-index:2; display:flex; align-items:flex-end; gap:9px}
+.wx .cloud{position:absolute; z-index:1; border-radius:50%; background:rgba(255,255,255,.9); filter:blur(2px)}
+.wx .c1{width:64px;height:64px; right:30px; top:14px}
+.wx .c2{width:46px;height:46px; right:70px; top:26px; background:rgba(255,255,255,.8)}
+.wx .c3{width:50px;height:50px; right:16px; top:30px; background:rgba(255,255,255,.82)}
+.wx .scrim{position:absolute; inset:0; z-index:2; background:linear-gradient(180deg,rgba(0,0,0,.34),transparent 42%,rgba(0,0,0,.5))}
+.wx .top{position:relative; z-index:3; display:flex; justify-content:space-between; align-items:center; gap:8px; font-size:11px; font-weight:800}
+.wx .top .pin{display:inline-flex; align-items:center; gap:4px; min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.wx .bot{position:relative; z-index:3; display:flex; align-items:flex-end; gap:9px}
 .wx .temp{font-size:40px; font-weight:900; line-height:.9; letter-spacing:-.02em}
 .wx .cond b{font-size:13px; font-weight:800; display:block}
 .wx .cond small{font-size:10.5px; opacity:.92}
@@ -184,13 +185,8 @@ section{position:relative}
 .tl .ev.hot .ax .d{background:var(--sand)}
 
 /* map screen */
-.mapscr{position:relative; height:100%; overflow:hidden; background:#dfe7e2}
-.mapscr .mp{position:absolute; inset:0; background:
-  radial-gradient(circle at 28% 32%, #d3e2d8, transparent 42%),
-  radial-gradient(circle at 72% 60%, #e3ddcf, transparent 40%),
-  linear-gradient(135deg,#e7efe9,#d4e0e6)}
-.mapscr .water{position:absolute; left:-12%; bottom:-8%; width:84%; height:48%; background:linear-gradient(160deg,#9ec7df,#7fb0d0); border-radius:46% 54% 50% 50%/60% 40% 60% 40%; opacity:.85; filter:blur(.4px)}
-.mapscr .road{position:absolute; background:rgba(255,255,255,.75); height:5px; border-radius:9px}
+.mapscr{position:relative; height:520px; overflow:hidden; background:#e7eee8}
+.mapscr svg{position:absolute; inset:0; width:100%; height:100%; display:block}
 .pin{position:absolute; transform:translate(-50%,-100%); z-index:2}
 .pin .pp{width:26px;height:26px;border-radius:50% 50% 50% 2px; background:var(--navy); transform:rotate(45deg); display:flex; align-items:center; justify-content:center; box-shadow:0 6px 12px -4px rgba(15,27,46,.6)}
 .pin .pp i{transform:rotate(-45deg); font-style:normal; font-size:12px}
@@ -199,7 +195,7 @@ section{position:relative}
 .map-sheet .grab{width:38px;height:4px;border-radius:2px;background:var(--line);margin:0 auto 9px}
 
 /* chat screen */
-.chat{display:flex; flex-direction:column; gap:9px; padding-top:6px; height:100%}
+.chat{display:flex; flex-direction:column; gap:9px; padding-top:6px; min-height:452px}
 .bub{max-width:82%; padding:9px 12px; border-radius:16px; font-size:12.5px; font-weight:600; line-height:1.4}
 .bub.me{align-self:flex-end; background:var(--navy); color:#fff; border-bottom-right-radius:5px}
 .bub.av{align-self:flex-start; background:#fff; border:1px solid var(--line); color:var(--navy); border-bottom-left-radius:5px; box-shadow:var(--shadow-soft)}
@@ -207,7 +203,7 @@ section{position:relative}
 .chat .barfake{margin-top:auto; display:flex; align-items:center; gap:8px; background:#fff; border:1px solid var(--line); border-radius:999px; padding:9px 14px; font-size:11.5px; color:var(--muted)}
 
 /* recap screen */
-.recap{height:100%; background:linear-gradient(165deg,#16304a,#0b1422); color:#fff; padding:18px 16px; display:flex; flex-direction:column; align-items:center; text-align:center}
+.recap{height:520px; background:linear-gradient(165deg,#16304a,#0b1422); color:#fff; padding:22px 16px; display:flex; flex-direction:column; align-items:center; text-align:center}
 .recap img.r{width:74px; margin-top:4px; filter:drop-shadow(0 12px 18px rgba(0,0,0,.4))}
 .recap h4{color:#fff; font-size:20px; margin-top:6px}
 .recap .sub{font-size:11px; opacity:.85; margin-top:2px}
