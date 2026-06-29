@@ -114,14 +114,11 @@ section{position:relative}
 .device-wrap{position:relative; display:flex; justify-content:center}
 .device-wrap::after{content:""; position:absolute; left:50%; transform:translateX(-50%); bottom:-26px; width:62%; height:50px;
   background:radial-gradient(ellipse at center, rgba(15,27,46,.22), transparent 70%); filter:blur(4px)}
-.device{position:relative; width:300px; max-width:78vw; border-radius:46px; padding:13px;
-  background:linear-gradient(155deg,#2b3a4d,#0b1422); box-shadow:var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.06)}
-.device .notch{position:absolute; top:20px; left:50%; transform:translateX(-50%); width:108px; height:30px; background:#05070c; border-radius:18px; z-index:6}
-.screen{position:relative; width:100%; border-radius:34px; overflow:hidden; background:var(--paper);
-  font-family:"Nunito",-apple-system,sans-serif; color:var(--navy)}
-.screen .sbar{position:relative; z-index:5; display:flex; justify-content:space-between; align-items:center; padding:12px 22px 4px; font-size:12px; font-weight:800; color:var(--navy)}
-.screen .sbar .rgt{display:flex; gap:5px; align-items:center; font-size:11px}
-.scr-body{padding:6px 13px 18px}
+.device{position:relative; width:300px; max-width:80vw; border-radius:44px; padding:9px;
+  background:linear-gradient(150deg,#3a4450,#0b1117); box-shadow:var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.05)}
+.device .shot{display:block; width:100%; aspect-ratio:1206/2622; object-fit:cover; border-radius:36px; background:#0b1422}
+.duo{display:flex; gap:38px; justify-content:center; align-items:flex-start; flex-wrap:wrap; margin-top:8px}
+.duo .device-wrap{flex:0 0 auto}
 
 /* generic app cards inside screen */
 .s-title-card{background:linear-gradient(160deg,#16304a,#0f1b2e); color:#fff; border-radius:20px; padding:14px 15px; position:relative; overflow:hidden}

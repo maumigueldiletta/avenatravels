@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=3">
+<link rel="stylesheet" href="assets/site.css?v=4">
 </head>
 <body>
 
@@ -49,36 +49,9 @@
         <span>💬 Assistente com IA</span>
       </div>
     </div>
-
     <div class="hero-art">
       <div class="glow"></div>
-      <!-- iPhone: tela Resumo com clima ao vivo -->
-      <div class="device">
-        <div class="notch"></div>
-        <div class="screen">
-          <div class="sbar"><span>9:41</span><span class="rgt">▰▰▰ &nbsp;􀙇 &nbsp;100%</span></div>
-          <div class="scr-body">
-            <div class="s-title-card">
-              <div class="loc">San Carlos de Bariloche, Argentina</div>
-              <h4>7 dias na Patagônia</h4>
-              <div class="dt">📅 29/06 – 05/07 · <b style="opacity:.95">é amanhã ✈️</b></div>
-            </div>
-            <div class="wx">
-              <div class="sky"></div>
-              <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
-              <div class="scrim"></div>
-              <div class="top"><span class="pin">📍 San Carlos de Bariloche</span><span>agora</span></div>
-              <div class="bot">
-                <span class="temp">4°</span>
-                <span class="cond"><b>Nublado</b><small>máx 6° · mín 2°</small>
-                  <span class="chip">❄️ neve prevista hoje</span></span>
-              </div>
-            </div>
-            <div class="s-card"><div class="ch"><span class="e">✈️</span> Voos <span class="cv">No horário ›</span></div></div>
-            <div class="s-card"><div class="ch"><span class="e">🛏️</span> Hospedagem <span class="cv">Check-in 18h ›</span></div></div>
-          </div>
-        </div>
-      </div>
+      <div class="device"><img class="shot" src="assets/app-resumo.jpg" alt="Tela inicial da Avena com o clima ao vivo do destino"></div>
       <img class="hero-robot-badge" src="assets/robot.png" alt="Mascote Avena">
     </div>
   </div>
@@ -113,36 +86,23 @@
   </div>
 </section>
 
-<!-- ===== SHOWCASES (telas) ===== -->
+<!-- ===== SHOWCASES (telas reais) ===== -->
 <section class="sec" id="telas" style="padding-top:8px">
   <div class="wrap">
 
-    <!-- 1: Resumo + clima ao vivo -->
+    <!-- 1: Resumo / cartões -->
     <div class="show reveal">
       <div class="show-text">
-        <span class="tag-live"><span class="dot"></span> ao vivo</span>
-        <h3>O clima do destino, em arte, agora</h3>
-        <p class="lead-p">Abriu o app, a primeira coisa é o tempo real no destino — um céu que muda conforme a condição, com temperatura atual, máxima, mínima e alerta de chuva ou neve do dia.</p>
+        <span class="eyebrow">Resumo da viagem</span>
+        <h3>Tudo que importa, num cartão só</h3>
+        <p class="lead-p">Voos, hospedagem, transfers, estacionamento, passeios, seguros e viajantes — cada bloco abre com os detalhes completos quando você precisa.</p>
         <ul class="feat-list">
-          <li><span class="ic">🌤️</span> Céu que se adapta: sol, nuvem, chuva ou neve</li>
-          <li><span class="ic">🌡️</span> Temperatura agora + máx/mín do dia</li>
-          <li><span class="ic">🧳</span> Cada bloco — voos, hotel, seguro — abre com tudo</li>
+          <li><span class="ic">✈️</span> Localizador, PIN e bagagem dos voos sempre à mão</li>
+          <li><span class="ic">🛏️</span> Check-in, check-out e telefone do hotel</li>
+          <li><span class="ic">⚠️</span> Pontos de atenção no topo, pra nada passar batido</li>
         </ul>
       </div>
-      <div class="device-wrap reveal d1">
-        <div class="device"><div class="notch"></div><div class="screen">
-          <div class="sbar"><span>9:41</span><span class="rgt">▰▰▰ &nbsp;100%</span></div>
-          <div class="scr-body">
-            <div class="s-title-card"><div class="loc">Bariloche, Argentina</div><h4>7 dias na Patagônia</h4><div class="dt">📅 29/06 – 05/07</div></div>
-            <div class="wx">
-              <div class="sky"></div><div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div><div class="scrim"></div>
-              <div class="top"><span class="pin">📍 San Carlos de Bariloche</span><span>agora</span></div>
-              <div class="bot"><span class="temp">4°</span><span class="cond"><b>Nublado</b><small>máx 6° · mín 2°</small><span class="chip">❄️ neve prevista</span></span></div>
-            </div>
-            <div class="s-card"><div class="ch"><span class="e">🛡️</span> Seguro viagem <span class="cv">Apólice ›</span></div></div>
-          </div>
-        </div></div>
-      </div>
+      <div class="device-wrap reveal d1"><div class="device"><img class="shot" src="assets/app-cards.jpg" alt="Resumo da viagem com cartões de voos, hospedagem, transfers e mais"></div></div>
     </div>
 
     <!-- 2: Voo ao vivo -->
@@ -157,63 +117,41 @@
           <li><span class="ic">🔔</span> Acompanha cada voo no dia certo</li>
         </ul>
       </div>
-      <div class="device-wrap reveal d1">
-        <div class="device"><div class="notch"></div><div class="screen">
-          <div class="sbar"><span>9:41</span><span class="rgt">▰▰▰ &nbsp;100%</span></div>
-          <div class="scr-body">
-            <div class="s-card"><div class="ch"><span class="e">✈️</span> Voo de ida</div></div>
-            <div class="fl">
-              <div class="fh">📡 Status ao vivo (ida) <span class="badge">No horário</span></div>
-              <div class="route">
-                <div class="ap"><div class="code">GRU</div><div class="tm">12:30</div><div class="gt">Term 3 · Portão 311</div></div>
-                <div class="pathline">✈️<div class="ln"></div><div class="dl">no horário</div></div>
-                <div class="ap"><div class="code">BRC</div><div class="tm"><s>17:10</s><span class="est">16:59</span></div><div class="gt">chega antes</div></div>
-              </div>
-            </div>
-            <div class="fl">
-              <div class="fh">📡 Status ao vivo (volta) <span class="badge" style="background:#0a84ff">Programado</span></div>
-              <div class="route">
-                <div class="ap"><div class="code">BRC</div><div class="tm">18:10</div><div class="gt">Term 1 · Portão 7</div></div>
-                <div class="pathline">✈️<div class="ln"></div></div>
-                <div class="ap"><div class="code">GRU</div><div class="tm">22:25</div></div>
-              </div>
-            </div>
-          </div>
-        </div></div>
-      </div>
+      <div class="device-wrap reveal d1"><div class="device"><img class="shot" src="assets/app-voos.jpg" alt="Detalhe dos voos com status ao vivo da ida e da volta"></div></div>
     </div>
 
-    <!-- 3: Cronograma -->
+    <!-- 3: Detalhe de cada reserva -->
     <div class="show reveal">
+      <div class="show-text">
+        <span class="eyebrow">Detalhes completos</span>
+        <h3>Cada reserva com tudo o que você precisa</h3>
+        <p class="lead-p">Horário de retirada, ponto de encontro, fornecedor, telefone, localizador e até o que preparar e levar — incluindo avisos importantes de cada passeio.</p>
+        <ul class="feat-list">
+          <li><span class="ic">⏰</span> "Pronto às…" e ponto de encontro</li>
+          <li><span class="ic">📞</span> Fornecedor e telefone pra falar na hora</li>
+          <li><span class="ic">💵</span> O que preparar, levar e quanto custa no local</li>
+        </ul>
+      </div>
+      <div class="device-wrap reveal d1"><div class="device"><img class="shot" src="assets/app-passeio.jpg" alt="Detalhe de um passeio com preparação, fornecedor e instruções"></div></div>
+    </div>
+
+    <!-- 4: Diário dia a dia -->
+    <div class="show rev reveal">
       <div class="show-text">
         <span class="eyebrow">Diário de bordo</span>
         <h3>Um cronograma dia a dia, do jeito certo</h3>
         <p class="lead-p">A linha do tempo do embarque ao retorno: a que horas estar pronto, onde é o ponto de encontro, o que levar e o que preparar antes de cada passeio.</p>
         <ul class="feat-list">
-          <li><span class="ic">⏰</span> "Esteja pronto às…" e horário de saída</li>
-          <li><span class="ic">📍</span> Ponto de encontro de cada atividade</li>
+          <li><span class="ic">🗓️</span> Dia 1, Dia 2… tudo na ordem</li>
+          <li><span class="ic">📍</span> Horários, locais e instruções de cada etapa</li>
           <li><span class="ic">🎒</span> O que preparar antes de sair</li>
         </ul>
       </div>
-      <div class="device-wrap reveal d1">
-        <div class="device"><div class="notch"></div><div class="screen">
-          <div class="sbar"><span>9:41</span><span class="rgt">▰▰▰ &nbsp;100%</span></div>
-          <div class="scr-body">
-            <div class="s-title-card" style="padding:11px 14px"><div class="loc">Segunda · Dia 1</div><h4 style="font-size:18px">Embarque & chegada</h4></div>
-            <div class="tl">
-              <div class="ev hot"><div class="tm">08:00</div><div class="ax"><div class="d"></div><div class="l"></div></div><div class="ct"><b>Entrar no estacionamento GRU</b><small>Indigo T2 · QR no brilho máximo</small></div></div>
-              <div class="ev"><div class="tm">09:30</div><div class="ax"><div class="d"></div><div class="l"></div></div><div class="ct"><b>Chegar ao aeroporto</b><small>Voo internacional — 3h antes</small></div></div>
-              <div class="ev"><div class="tm">12:30</div><div class="ax"><div class="d"></div><div class="l"></div></div><div class="ct"><b>Voo LATAM LA8162 · GRU → BRC</b><small>Direto · 4h40</small></div></div>
-              <div class="ev"><div class="tm">17:10</div><div class="ax"><div class="d"></div><div class="l"></div></div><div class="ct"><b>Chegada em Bariloche</b><small>Transfer aguarda · ref. 882209850</small></div></div>
-              <div class="ev"><div class="tm">18:00</div><div class="ax"><div class="d"></div></div><div class="ct"><b>Check-in Cacique Inacayal</b><small>Passaporte p/ isenção do IVA · PIN 0448</small></div></div>
-            </div>
-          </div>
-        </div></div>
-      </div>
+      <div class="device-wrap reveal d1"><div class="device"><img class="shot" src="assets/app-diario.jpg" alt="Diário da viagem com o cronograma dia a dia"></div></div>
     </div>
 
-    <!-- 4: Mapa -->
-    <div class="show rev reveal">
+    <!-- 5: Mapa -->
+    <div class="show reveal">
       <div class="show-text">
         <span class="eyebrow">Mapa da viagem</span>
         <h3>Hotel, aeroporto e passeios no mapa</h3>
@@ -224,43 +162,11 @@
           <li><span class="ic">📌</span> Hotel, voos e cada atividade marcados</li>
         </ul>
       </div>
-      <div class="device-wrap reveal d1">
-        <div class="device"><div class="notch"></div><div class="screen">
-          <div class="mapscr">
-            <svg viewBox="0 0 300 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-              <rect width="300" height="520" fill="#e7eee8"/>
-              <rect x="176" y="34" width="104" height="76" rx="16" fill="#d2e3cd"/>
-              <rect x="18" y="150" width="78" height="62" rx="15" fill="#d2e3cd"/>
-              <rect x="120" y="250" width="70" height="54" rx="14" fill="#d8e7d3"/>
-              <path d="M-20 520 L-20 372 Q50 344 104 388 Q168 444 150 520 Z" fill="#a7cfe3"/>
-              <path d="M150 520 Q168 466 214 466 Q266 466 300 498 L300 520 Z" fill="#a7cfe3"/>
-              <g stroke="#d9e1d8" stroke-width="12" stroke-linecap="round" fill="none">
-                <path d="M28 72 H282"/><path d="M16 250 H286"/><path d="M150 330 H300"/>
-                <path d="M62 -10 V330"/><path d="M204 18 V520"/>
-                <path d="M-10 132 Q120 112 300 196"/><path d="M118 0 L246 210"/>
-              </g>
-              <g stroke="#ffffff" stroke-width="7" stroke-linecap="round" fill="none">
-                <path d="M28 72 H282"/><path d="M16 250 H286"/><path d="M150 330 H300"/>
-                <path d="M62 -10 V330"/><path d="M204 18 V520"/>
-                <path d="M-10 132 Q120 112 300 196"/><path d="M118 0 L246 210"/>
-              </g>
-            </svg>
-            <div class="pin sand" style="left:30%; top:28%"><div class="pp"><i>✈</i></div></div>
-            <div class="pin" style="left:55%; top:42%"><div class="pp"><i>🛏</i></div></div>
-            <div class="pin sage" style="left:40%; top:58%"><div class="pp"><i>⛷</i></div></div>
-            <div class="pin sage" style="left:75%; top:25%"><div class="pp"><i>🚠</i></div></div>
-            <div class="map-sheet">
-              <div class="grab"></div>
-              <div class="ch" style="display:flex;align-items:center;gap:8px;font-weight:800;font-size:13px"><span style="width:24px;height:24px;border-radius:7px;background:rgba(123,165,147,.16);display:flex;align-items:center;justify-content:center">📍</span> 8 lugares nesta viagem</div>
-              <div style="font-size:11px;color:var(--ink-2);margin-top:6px">Aeroporto BRC · Cacique Inacayal · Cerro Catedral · Circuito Chico…</div>
-            </div>
-          </div>
-        </div></div>
-      </div>
+      <div class="device-wrap reveal d1"><div class="device"><img class="shot" src="assets/app-mapa.jpg" alt="Mapa da viagem com todos os locais marcados"></div></div>
     </div>
 
-    <!-- 5: Assistente -->
-    <div class="show reveal">
+    <!-- 6: Assistente -->
+    <div class="show rev reveal">
       <div class="show-text">
         <span class="eyebrow">Assistente Avena</span>
         <h3>Pergunte qualquer coisa — ela responde</h3>
@@ -271,50 +177,23 @@
           <li><span class="ic">📝</span> Anote o que quiser em cima de cada item</li>
         </ul>
       </div>
-      <div class="device-wrap reveal d1">
-        <div class="device"><div class="notch"></div><div class="screen">
-          <div class="sbar"><span>9:41</span><span class="rgt">▰▰▰ &nbsp;100%</span></div>
-          <div class="scr-body"><div class="chat">
-            <div class="bub me">O que devo levar pra Bariloche?</div>
-            <div class="bub av"><div class="who">Avena</div>Inverno na Patagônia, entre -5°C e 8°C com neve. Leve casaco térmico, luvas, gorro, botas impermeáveis e protetor solar — o sol da neve engana! 🧤</div>
-            <div class="bub me">Quanto tá o peso argentino?</div>
-            <div class="bub av"><div class="who">Avena</div>Agora: 1 ARS ≈ R$ 0,006. Leve alguns reais em espécie pra trocar — muitos lugares preferem dinheiro. 💸</div>
-            <div class="barfake">Pergunte à Avena…&nbsp; <span style="margin-left:auto">⬆️</span></div>
-          </div></div>
-        </div></div>
-      </div>
+      <div class="device-wrap reveal d1"><div class="device"><img class="shot" src="assets/app-avena.jpg" alt="Conversa com a assistente Avena"></div></div>
     </div>
+  </div>
+</section>
 
-    <!-- 6: Recap -->
-    <div class="show rev reveal">
-      <div class="show-text">
-        <span class="eyebrow">Recap da viagem</span>
-        <h3>No fim, um cartão lindo pra compartilhar</h3>
-        <p class="lead-p">Quando a viagem termina, a Avena monta um resumo com seus números e uma mensagem carinhosa — pronto pra mandar pra quem você ama.</p>
-        <ul class="feat-list">
-          <li><span class="ic">✨</span> Dias, passeios, lugares e viajantes</li>
-          <li><span class="ic">💌</span> Uma mensagem da Avena só sua</li>
-          <li><span class="ic">📤</span> Compartilhe como imagem num toque</li>
-        </ul>
-      </div>
-      <div class="device-wrap reveal d1">
-        <div class="device"><div class="notch"></div><div class="screen">
-          <div class="recap">
-            <img class="r" src="assets/robot.png" alt="">
-            <h4>7 dias na Patagônia</h4>
-            <div class="sub">San Carlos de Bariloche · 29/06–05/07</div>
-            <div class="tiles">
-              <div class="tile"><b>7</b><small>dias</small></div>
-              <div class="tile"><b>5</b><small>passeios</small></div>
-              <div class="tile"><b>8</b><small>lugares</small></div>
-              <div class="tile"><b>2</b><small>viajantes</small></div>
-            </div>
-            <div class="share">⬆︎ Compartilhar viagem</div>
-          </div>
-        </div></div>
-      </div>
+<!-- ===== DYNAMIC ISLAND + LIVE ACTIVITY ===== -->
+<section class="sec" id="aovivo-iphone" style="background:linear-gradient(180deg,#fff,var(--mist))">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Sempre à vista</span>
+      <h2>Seu voo na tela de bloqueio e na Dynamic Island</h2>
+      <p>Atividades ao Vivo do iPhone: o embarque e a contagem regressiva aparecem sem você nem abrir o app.</p>
     </div>
-
+    <div class="duo reveal">
+      <div class="device-wrap"><div class="device"><img class="shot" src="assets/app-lock.jpg" alt="Tela de bloqueio do iPhone com a Atividade ao Vivo do voo da Avena"></div></div>
+      <div class="device-wrap"><div class="device"><img class="shot" src="assets/app-island.jpg" alt="Dynamic Island do iPhone mostrando o voo da Avena"></div></div>
+    </div>
   </div>
 </section>
 
@@ -335,7 +214,7 @@
 </section>
 
 <!-- ===== FEATURE GRID ===== -->
-<section class="sec" id="recursos" style="background:linear-gradient(180deg,#fff,var(--mist))">
+<section class="sec" id="recursos">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Tudo num lugar só</span>
@@ -351,7 +230,7 @@
       <div class="card reveal d2"><div class="ic">🗣️</div><h3>Frases úteis</h3><p>As expressões essenciais no idioma local, pra você se virar em qualquer situação.</p></div>
       <div class="card reveal"><div class="ic">📍</div><h3>Várias viagens</h3><p>Guarde todas as suas viagens e alterne entre elas — passadas, atuais e futuras.</p></div>
       <div class="card reveal d1"><div class="ic">🔒</div><h3>Login seguro</h3><p>Entre com a Apple. Seus dados de viagem ficam protegidos e só seus.</p></div>
-      <div class="card reveal d2"><div class="ic">🔔</div><h3>Na tela de bloqueio</h3><p>Próximo passo da viagem à vista com widgets e atividades ao vivo no iPhone.</p></div>
+      <div class="card reveal d2"><div class="ic">🔔</div><h3>Recap da viagem</h3><p>No fim, um resumo lindo com seus números e uma mensagem da Avena pra compartilhar.</p></div>
     </div>
   </div>
 </section>
