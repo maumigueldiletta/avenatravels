@@ -3,15 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Avena — sua agência de viagem com IA</title>
-<meta name="description" content="A Avena lê seus documentos de viagem e organiza tudo num só lugar: roteiro dia a dia, mapas, telefones de emergência e uma assistente com IA que responde qualquer dúvida.">
-<meta property="og:title" content="Avena — sua agência de viagem com IA">
-<meta property="og:description" content="Suba seus documentos e tenha a viagem inteira organizada, com uma assistente fofa que cuida de tudo por você.">
+<title>Avena — sua agente de viagem com IA</title>
+<meta name="description" content="A Avena lê suas passagens e reservas e organiza a viagem inteira: roteiro dia a dia, clima ao vivo, status de voo, mapas, câmbio, emergência e uma assistente com IA que responde tudo.">
+<meta property="og:title" content="Avena — sua agente de viagem com IA">
+<meta property="og:description" content="Suba seus documentos e tenha a viagem inteira organizada — com clima e voo ao vivo, mapas e uma assistente que cuida de tudo por você.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://avenatravels.com/assets/hero-bg.jpg">
+<meta name="theme-color" content="#0F1B2E">
 <link rel="icon" href="assets/appicon.png">
+<link rel="apple-touch-icon" href="assets/appicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -21,97 +24,304 @@
     <a class="brand" href="/"><img src="assets/logo.png" alt="Avena"> Avena</a>
     <div class="nav-links">
       <a href="#como">Como funciona</a>
+      <a href="#telas">Por dentro</a>
+      <a href="#aovivo">Ao vivo</a>
       <a href="#recursos">Recursos</a>
-      <a href="#avena">A Avena</a>
-      <a href="#baixar" class="btn btn-primary">Baixar o app</a>
+      <a href="https://testflight.apple.com/join/uphG8NpK" class="btn btn-tf" target="_blank" rel="noopener">Entrar no beta</a>
     </div>
   </div>
 </nav>
 
+<!-- ===== HERO ===== -->
 <header class="hero">
   <div class="hero-in">
     <div>
-      <span class="pill-soon"><span class="dot"></span> Em breve na App Store</span>
+      <span class="pill-soon"><span class="dot"></span> Beta aberto no TestFlight</span>
       <h1>Sua viagem inteira,<br>organizada por <span class="accent">uma amiga</span>.</h1>
-      <p class="lead">A Avena lê suas passagens, reservas e vouchers — e monta o roteiro completo, com mapas, horários e telefones de emergência. Você só viaja.</p>
+      <p class="lead">A Avena lê suas passagens, reservas e vouchers — e monta o roteiro completo, com clima e voo ao vivo, mapas e telefones de emergência. Você só viaja.</p>
       <div class="hero-cta">
-        <a href="#baixar" class="btn btn-primary">✈️ Quero a Avena</a>
-        <a href="#como" class="btn btn-ghost">Ver como funciona</a>
+        <a href="https://testflight.apple.com/join/uphG8NpK" class="btn btn-tf" target="_blank" rel="noopener">✈️ Testar agora no TestFlight</a>
+        <a href="#como" class="btn btn-light">Ver como funciona</a>
+      </div>
+      <div class="hero-meta">
+        <span>🌤️ Clima ao vivo</span>
+        <span>🛫 Status de voo</span>
+        <span>💬 Assistente com IA</span>
       </div>
     </div>
+
     <div class="hero-art">
-      <div class="hero-ring"></div>
-      <img class="hero-robot" src="assets/robot.png" alt="Mascote Avena, um robozinho creme com fones e cachecol verde">
+      <div class="glow"></div>
+      <!-- iPhone: tela Resumo com clima ao vivo -->
+      <div class="device">
+        <div class="notch"></div>
+        <div class="screen">
+          <div class="sbar"><span>9:41</span><span class="rgt">▰▰▰ &nbsp;􀙇 &nbsp;100%</span></div>
+          <div class="scr-body">
+            <div class="s-title-card">
+              <div class="loc">San Carlos de Bariloche, Argentina</div>
+              <h4>7 dias na Patagônia</h4>
+              <div class="dt">📅 29/06 – 05/07 · <b style="opacity:.95">é amanhã ✈️</b></div>
+              <img class="rb" src="assets/appicon.png" alt="">
+            </div>
+            <div class="wx">
+              <div class="sky"></div>
+              <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+              <div class="scrim"></div>
+              <div class="top"><span class="pin">📍 San Carlos de Bariloche</span><span>agora</span></div>
+              <div class="bot">
+                <span class="temp">4°</span>
+                <span class="cond"><b>Nublado</b><small>máx 6° · mín 2°</small>
+                  <span class="chip">❄️ neve prevista hoje</span></span>
+              </div>
+            </div>
+            <div class="s-card"><div class="ch"><span class="e">✈️</span> Voos <span class="cv">No horário ›</span></div></div>
+            <div class="s-card"><div class="ch"><span class="e">🛏️</span> Hospedagem <span class="cv">Check-in 18h ›</span></div></div>
+          </div>
+        </div>
+      </div>
+      <img class="hero-robot-badge" src="assets/robot.png" alt="Mascote Avena">
     </div>
   </div>
 </header>
 
-<!-- COMO FUNCIONA -->
+<!-- ===== TRUST STRIP ===== -->
+<div class="trust">
+  <div class="trust-in">
+    <span><span class="tic">✓</span> Lê PDF e foto</span>
+    <span><span class="tic">✓</span> Clima &amp; voo ao vivo</span>
+    <span><span class="tic">✓</span> Câmbio na hora</span>
+    <span><span class="tic">✓</span> Mapas integrados</span>
+    <span><span class="tic">✓</span> Várias viagens</span>
+    <span><span class="tic">✓</span> Feito para iPhone</span>
+  </div>
+</div>
+
+<!-- ===== COMO FUNCIONA ===== -->
 <section class="sec" id="como">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Simples assim</span>
-      <h2>Três passos e a viagem se organiza sozinha</h2>
-      <p>Sem planilha, sem caça a e-mail. Você sobe os documentos, a Avena cuida do resto.</p>
+      <h2>Da papelada à viagem pronta, em minutos</h2>
+      <p>Sem planilha, sem caça a e-mail. Você sobe os documentos — ou descreve a viagem — e a Avena cuida do resto.</p>
     </div>
     <div class="steps">
-      <div class="step reveal"><div class="n">1</div><h3>Suba seus documentos</h3><p>Passagens, reserva do hotel, vouchers de passeios, seguro, transfer — em PDF ou foto. Pode jogar tudo de uma vez.</p></div>
-      <div class="step reveal"><div class="n">2</div><h3>A IA organiza tudo</h3><p>A Avena lê cada documento e monta a viagem: datas, horários, localizadores, pontos de encontro e contatos.</p></div>
-      <div class="step reveal"><div class="n">3</div><h3>Viaje tranquilo</h3><p>Abra o app e tenha o dia a dia na palma da mão — com mapa, alertas e uma assistente pra tirar qualquer dúvida.</p></div>
+      <div class="step reveal"><div class="n">1</div><h3>Suba os documentos</h3><p>Passagens, hotel, vouchers, seguro, transfer — em PDF ou foto. Pode jogar tudo de uma vez.</p></div>
+      <div class="step reveal d1"><div class="n">2</div><h3>A IA organiza tudo</h3><p>A Avena lê cada documento e monta a viagem: datas, horários, localizadores, PINs e contatos.</p></div>
+      <div class="step reveal d2"><div class="n">3</div><h3>Acompanhe ao vivo</h3><p>Clima do destino, status do voo e câmbio atualizados na hora, com alertas do que preparar.</p></div>
+      <div class="step reveal d3"><div class="n">4</div><h3>Viaje tranquilo</h3><p>O dia a dia na palma da mão — mapa, emergência e uma assistente pra qualquer dúvida.</p></div>
     </div>
   </div>
 </section>
 
-<!-- SHOWCASE 1: resumo -->
-<section class="sec" id="recursos" style="padding-top:20px">
+<!-- ===== SHOWCASES (telas) ===== -->
+<section class="sec" id="telas" style="padding-top:8px">
   <div class="wrap">
+
+    <!-- 1: Resumo + clima ao vivo -->
     <div class="show reveal">
       <div class="show-text">
-        <span class="eyebrow">Resumo da viagem</span>
-        <h3>Tudo que importa, num cartão só</h3>
-        <p>Voos, hospedagem, transfers, passeios, seguros e viajantes — cada bloco abre com os detalhes completos quando você precisa.</p>
+        <span class="tag-live"><span class="dot"></span> ao vivo</span>
+        <h3>O clima do destino, em arte, agora</h3>
+        <p class="lead-p">Abriu o app, a primeira coisa é o tempo real no destino — um céu que muda conforme a condição, com temperatura atual, máxima, mínima e alerta de chuva ou neve do dia.</p>
         <ul class="feat-list">
-          <li><span class="ic">✈️</span> Localizador, PIN e bagagem dos voos sempre à mão</li>
-          <li><span class="ic">🛏️</span> Check-in, check-out e telefone do hotel</li>
-          <li><span class="ic">🛡️</span> Apólice e telefone de emergência do seguro</li>
+          <li><span class="ic">🌤️</span> Céu que se adapta: sol, nuvem, chuva ou neve</li>
+          <li><span class="ic">🌡️</span> Temperatura agora + máx/mín do dia</li>
+          <li><span class="ic">🧳</span> Cada bloco — voos, hotel, seguro — abre com tudo</li>
         </ul>
       </div>
-      <div class="phone-wrap"><div class="phone"><img src="assets/ui_resumo.png" alt="Tela de resumo da viagem no app Avena"></div></div>
+      <div class="device-wrap reveal d1">
+        <div class="device"><div class="notch"></div><div class="screen">
+          <div class="sbar"><span>9:41</span><span class="rgt">▰▰▰ &nbsp;100%</span></div>
+          <div class="scr-body">
+            <div class="s-title-card"><div class="loc">Bariloche, Argentina</div><h4>7 dias na Patagônia</h4><div class="dt">📅 29/06 – 05/07</div><img class="rb" src="assets/appicon.png" alt=""></div>
+            <div class="wx">
+              <div class="sky"></div><div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div><div class="scrim"></div>
+              <div class="top"><span class="pin">📍 San Carlos de Bariloche</span><span>agora</span></div>
+              <div class="bot"><span class="temp">4°</span><span class="cond"><b>Nublado</b><small>máx 6° · mín 2°</small><span class="chip">❄️ neve prevista</span></span></div>
+            </div>
+            <div class="s-card"><div class="ch"><span class="e">🛡️</span> Seguro viagem <span class="cv">Apólice ›</span></div></div>
+          </div>
+        </div></div>
+      </div>
     </div>
 
-    <!-- SHOWCASE 2: cronograma -->
+    <!-- 2: Voo ao vivo -->
     <div class="show rev reveal">
+      <div class="show-text">
+        <span class="tag-live"><span class="dot"></span> ao vivo</span>
+        <h3>Status do voo, dentro do app</h3>
+        <p class="lead-p">Portão, terminal, horário programado e estimado, e atraso em tempo real — para todos os voos da viagem, ida e volta. Sem sair pra outro site.</p>
+        <ul class="feat-list">
+          <li><span class="ic">🛫</span> Portão e terminal assim que saem</li>
+          <li><span class="ic">⏱️</span> Horário estimado e minutos de atraso</li>
+          <li><span class="ic">🔔</span> Acompanha cada voo no dia certo</li>
+        </ul>
+      </div>
+      <div class="device-wrap reveal d1">
+        <div class="device"><div class="notch"></div><div class="screen">
+          <div class="sbar"><span>9:41</span><span class="rgt">▰▰▰ &nbsp;100%</span></div>
+          <div class="scr-body">
+            <div class="s-card"><div class="ch"><span class="e">✈️</span> Voo de ida</div></div>
+            <div class="fl">
+              <div class="fh">📡 Status ao vivo (ida) <span class="badge">No horário</span></div>
+              <div class="route">
+                <div class="ap"><div class="code">GRU</div><div class="tm">12:30</div><div class="gt">Term 3 · Portão 311</div></div>
+                <div class="pathline">✈️<div class="ln"></div><div class="dl">no horário</div></div>
+                <div class="ap"><div class="code">BRC</div><div class="tm"><s>17:10</s><span class="est">16:59</span></div><div class="gt">chega antes</div></div>
+              </div>
+            </div>
+            <div class="fl">
+              <div class="fh">📡 Status ao vivo (volta) <span class="badge" style="background:#0a84ff">Programado</span></div>
+              <div class="route">
+                <div class="ap"><div class="code">BRC</div><div class="tm">18:10</div><div class="gt">Term 1 · Portão 7</div></div>
+                <div class="pathline">✈️<div class="ln"></div></div>
+                <div class="ap"><div class="code">GRU</div><div class="tm">22:25</div></div>
+              </div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 3: Cronograma -->
+    <div class="show reveal">
       <div class="show-text">
         <span class="eyebrow">Diário de bordo</span>
         <h3>Um cronograma dia a dia, do jeito certo</h3>
-        <p>A Avena monta a linha do tempo do embarque ao retorno: a que horas estar pronto, onde é o ponto de encontro, o que levar e o que preparar antes de cada passeio.</p>
+        <p class="lead-p">A linha do tempo do embarque ao retorno: a que horas estar pronto, onde é o ponto de encontro, o que levar e o que preparar antes de cada passeio.</p>
         <ul class="feat-list">
-          <li><span class="ic">⏰</span> Horário de saída e "esteja pronto às…"</li>
+          <li><span class="ic">⏰</span> "Esteja pronto às…" e horário de saída</li>
           <li><span class="ic">📍</span> Ponto de encontro de cada atividade</li>
           <li><span class="ic">🎒</span> O que preparar antes de sair</li>
         </ul>
       </div>
-      <div class="phone-wrap"><div class="phone"><img src="assets/ui_cronograma.png" alt="Cronograma dia a dia no app Avena"></div></div>
+      <div class="device-wrap reveal d1">
+        <div class="device"><div class="notch"></div><div class="screen">
+          <div class="sbar"><span>9:41</span><span class="rgt">▰▰▰ &nbsp;100%</span></div>
+          <div class="scr-body">
+            <div class="s-title-card" style="padding:11px 14px"><div class="loc">Segunda · Dia 1</div><h4 style="font-size:18px">Embarque & chegada</h4></div>
+            <div class="tl">
+              <div class="ev hot"><div class="tm">08:00</div><div class="ax"><div class="d"></div><div class="l"></div></div><div class="ct"><b>Entrar no estacionamento GRU</b><small>Indigo T2 · QR no brilho máximo</small></div></div>
+              <div class="ev"><div class="tm">09:30</div><div class="ax"><div class="d"></div><div class="l"></div></div><div class="ct"><b>Chegar ao aeroporto</b><small>Voo internacional — 3h antes</small></div></div>
+              <div class="ev"><div class="tm">12:30</div><div class="ax"><div class="d"></div><div class="l"></div></div><div class="ct"><b>Voo LATAM LA8162 · GRU → BRC</b><small>Direto · 4h40</small></div></div>
+              <div class="ev"><div class="tm">17:10</div><div class="ax"><div class="d"></div><div class="l"></div></div><div class="ct"><b>Chegada em Bariloche</b><small>Transfer aguarda · ref. 882209850</small></div></div>
+              <div class="ev"><div class="tm">18:00</div><div class="ax"><div class="d"></div></div><div class="ct"><b>Check-in Cacique Inacayal</b><small>Passaporte p/ isenção do IVA · PIN 0448</small></div></div>
+            </div>
+          </div>
+        </div></div>
+      </div>
     </div>
 
-    <!-- SHOWCASE 3: mapa -->
-    <div class="show reveal">
+    <!-- 4: Mapa -->
+    <div class="show rev reveal">
       <div class="show-text">
         <span class="eyebrow">Mapa da viagem</span>
         <h3>Hotel, aeroporto e passeios no mapa</h3>
-        <p>Todos os lugares da viagem aparecem juntos no mapa, prontos pra abrir no app de Mapas e traçar a rota num toque.</p>
+        <p class="lead-p">Todos os lugares da viagem reunidos no mapa, prontos pra abrir no app de Mapas e traçar a rota num toque.</p>
         <ul class="feat-list">
-          <li><span class="ic">🗺️</span> Todos os pontos da viagem reunidos</li>
+          <li><span class="ic">🗺️</span> Todos os pontos da viagem juntos</li>
           <li><span class="ic">🧭</span> Abre direto no Mapas para navegar</li>
+          <li><span class="ic">📌</span> Hotel, voos e cada atividade marcados</li>
         </ul>
       </div>
-      <div class="phone-wrap"><div class="phone"><img src="assets/ui_mapa.png" alt="Mapa com os locais da viagem no app Avena"></div></div>
+      <div class="device-wrap reveal d1">
+        <div class="device"><div class="notch"></div><div class="screen">
+          <div class="mapscr">
+            <div class="mp"></div><div class="water"></div>
+            <div class="road" style="width:60%; top:38%; left:18%; transform:rotate(-12deg)"></div>
+            <div class="road" style="width:46%; top:60%; left:8%; transform:rotate(8deg)"></div>
+            <div class="pin sand" style="left:32%; top:34%"><div class="pp"><i>✈</i></div></div>
+            <div class="pin" style="left:58%; top:46%"><div class="pp"><i>🛏</i></div></div>
+            <div class="pin sage" style="left:46%; top:64%"><div class="pp"><i>⛷</i></div></div>
+            <div class="pin sage" style="left:72%; top:30%"><div class="pp"><i>🚠</i></div></div>
+            <div class="map-sheet">
+              <div class="grab"></div>
+              <div class="ch" style="display:flex;align-items:center;gap:8px;font-weight:800;font-size:13px"><span style="width:24px;height:24px;border-radius:7px;background:rgba(123,165,147,.16);display:flex;align-items:center;justify-content:center">📍</span> 8 lugares nesta viagem</div>
+              <div style="font-size:11px;color:var(--ink-2);margin-top:6px">Aeroporto BRC · Cacique Inacayal · Cerro Catedral · Circuito Chico…</div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 5: Assistente -->
+    <div class="show reveal">
+      <div class="show-text">
+        <span class="eyebrow">Assistente Avena</span>
+        <h3>Pergunte qualquer coisa — ela responde</h3>
+        <p class="lead-p">Clima, câmbio, o que vestir, distância, o que é típico comer. A Avena conhece a sua viagem e busca o que for atual na web.</p>
+        <ul class="feat-list">
+          <li><span class="ic">💬</span> Respostas com o contexto da sua viagem</li>
+          <li><span class="ic">🌐</span> Informações atuais da internet</li>
+          <li><span class="ic">📝</span> Anote o que quiser em cima de cada item</li>
+        </ul>
+      </div>
+      <div class="device-wrap reveal d1">
+        <div class="device"><div class="notch"></div><div class="screen">
+          <div class="sbar"><span>9:41</span><span class="rgt">▰▰▰ &nbsp;100%</span></div>
+          <div class="scr-body"><div class="chat">
+            <div class="bub me">O que devo levar pra Bariloche?</div>
+            <div class="bub av"><div class="who">Avena</div>Inverno na Patagônia, entre -5°C e 8°C com neve. Leve casaco térmico, luvas, gorro, botas impermeáveis e protetor solar — o sol da neve engana! 🧤</div>
+            <div class="bub me">Quanto tá o peso argentino?</div>
+            <div class="bub av"><div class="who">Avena</div>Agora: 1 ARS ≈ R$ 0,006. Leve alguns reais em espécie pra trocar — muitos lugares preferem dinheiro. 💸</div>
+            <div class="barfake">Pergunte à Avena…&nbsp; <span style="margin-left:auto">⬆️</span></div>
+          </div></div>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 6: Recap -->
+    <div class="show rev reveal">
+      <div class="show-text">
+        <span class="eyebrow">Recap da viagem</span>
+        <h3>No fim, um cartão lindo pra compartilhar</h3>
+        <p class="lead-p">Quando a viagem termina, a Avena monta um resumo com seus números e uma mensagem carinhosa — pronto pra mandar pra quem você ama.</p>
+        <ul class="feat-list">
+          <li><span class="ic">✨</span> Dias, passeios, lugares e viajantes</li>
+          <li><span class="ic">💌</span> Uma mensagem da Avena só sua</li>
+          <li><span class="ic">📤</span> Compartilhe como imagem num toque</li>
+        </ul>
+      </div>
+      <div class="device-wrap reveal d1">
+        <div class="device"><div class="notch"></div><div class="screen">
+          <div class="recap">
+            <img class="r" src="assets/robot.png" alt="">
+            <h4>7 dias na Patagônia</h4>
+            <div class="sub">San Carlos de Bariloche · 29/06–05/07</div>
+            <div class="tiles">
+              <div class="tile"><b>7</b><small>dias</small></div>
+              <div class="tile"><b>5</b><small>passeios</small></div>
+              <div class="tile"><b>8</b><small>lugares</small></div>
+              <div class="tile"><b>2</b><small>viajantes</small></div>
+            </div>
+            <div class="share">⬆︎ Compartilhar viagem</div>
+          </div>
+        </div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== AO VIVO (band) ===== -->
+<section class="live" id="aovivo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" style="color:var(--sand)">Em tempo real</span>
+      <h2>A única que acompanha sua viagem ao vivo</h2>
+      <p>Enquanto outros apps só guardam papel, a Avena puxa dados do mundo real e te mantém um passo à frente.</p>
+    </div>
+    <div class="live-grid">
+      <div class="live-card reveal"><div class="ic">🌤️</div><h3>Clima do destino</h3><p>Temperatura atual, máx/mín e previsão de chuva ou neve — com arte que muda conforme o céu.</p><span class="badge"><span class="dot"></span> atualiza sozinho</span></div>
+      <div class="live-card reveal d1"><div class="ic">🛫</div><h3>Status de voo</h3><p>Portão, terminal, atraso e horário estimado de cada voo, ida e volta, dentro do app.</p><span class="badge"><span class="dot"></span> minuto a minuto</span></div>
+      <div class="live-card reveal d2"><div class="ic">💱</div><h3>Câmbio na hora</h3><p>A moeda local convertida pra real no instante, e um conversor pra calcular qualquer valor.</p><span class="badge"><span class="dot"></span> cotação do dia</span></div>
     </div>
   </div>
 </section>
 
-<!-- FEATURE GRID -->
-<section class="sec" style="background:linear-gradient(180deg,#fff,var(--mist))">
+<!-- ===== FEATURE GRID ===== -->
+<section class="sec" id="recursos" style="background:linear-gradient(180deg,#fff,var(--mist))">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Tudo num lugar só</span>
@@ -119,18 +329,21 @@
       <p>Cada detalhe da viagem, mais o que você nem lembraria de checar.</p>
     </div>
     <div class="grid">
-      <div class="card reveal"><div class="ic">💬</div><h3>Assistente Avena</h3><p>Pergunte qualquer coisa — clima, câmbio, o que vestir, distância — com respostas atuais da web.</p></div>
-      <div class="card reveal"><div class="ic">⚠️</div><h3>Pontos de atenção</h3><p>Alertas do que é fácil esquecer: documento de menor, dinheiro em espécie, horários apertados.</p></div>
-      <div class="card reveal"><div class="ic">🆘</div><h3>Emergência e contatos</h3><p>Telefones de polícia, hospital, seguro, hotel e consulado, prontos pra ligar num toque.</p></div>
+      <div class="card reveal"><div class="ic">🤖</div><h3>Crie do zero com IA</h3><p>Sem documentos? Descreva a viagem dos sonhos e a Avena monta um roteiro completo pra você.</p></div>
+      <div class="card reveal d1"><div class="ic">⚠️</div><h3>Pontos de atenção</h3><p>Alertas do que é fácil esquecer: documento de menor, dinheiro em espécie, horários apertados.</p></div>
+      <div class="card reveal d2"><div class="ic">🆘</div><h3>Emergência e contatos</h3><p>Polícia, hospital, seguro, hotel e consulado, prontos pra ligar num toque.</p></div>
       <div class="card reveal"><div class="ic">📄</div><h3>Documentos sempre com você</h3><p>Localizadores, PINs, confirmações e apólices guardados e organizados por categoria.</p></div>
-      <div class="card reveal"><div class="ic">🧳</div><h3>Checklist de mala</h3><p>Lista do que levar pensada para o destino, o clima e quem viaja com você.</p></div>
-      <div class="card reveal"><div class="ic">📝</div><h3>Suas anotações</h3><p>Anote o que quiser em cima de cada item e mantenha tudo do seu jeito.</p></div>
+      <div class="card reveal d1"><div class="ic">🧳</div><h3>Checklist de mala</h3><p>Lista do que levar pensada para o destino, o clima e quem viaja com você.</p></div>
+      <div class="card reveal d2"><div class="ic">🗣️</div><h3>Frases úteis</h3><p>As expressões essenciais no idioma local, pra você se virar em qualquer situação.</p></div>
+      <div class="card reveal"><div class="ic">📍</div><h3>Várias viagens</h3><p>Guarde todas as suas viagens e alterne entre elas — passadas, atuais e futuras.</p></div>
+      <div class="card reveal d1"><div class="ic">🔒</div><h3>Login seguro</h3><p>Entre com a Apple. Seus dados de viagem ficam protegidos e só seus.</p></div>
+      <div class="card reveal d2"><div class="ic">🔔</div><h3>Na tela de bloqueio</h3><p>Próximo passo da viagem à vista com widgets e atividades ao vivo no iPhone.</p></div>
     </div>
   </div>
 </section>
 
-<!-- AVENA PERSONALITY -->
-<section class="sec" id="avena">
+<!-- ===== AVENA PERSONALITY ===== -->
+<section class="sec sec-tight" id="avena">
   <div class="band reveal">
     <img src="assets/robot.png" alt="A mascote Avena acenando">
     <div>
@@ -141,25 +354,29 @@
   </div>
 </section>
 
-<!-- CTA -->
+<!-- ===== CTA ===== -->
 <section class="cta" id="baixar">
   <div class="reveal">
-    <img src="assets/appicon.png" alt="Ícone do app Avena" style="width:84px;height:84px;border-radius:22px;margin:0 auto 18px;box-shadow:var(--shadow)">
+    <img class="appicon" src="assets/appicon.png" alt="Ícone do app Avena">
     <h2>Pronta para a sua próxima viagem</h2>
-    <p>A Avena chega em breve à App Store. Enquanto isso, é só guardar o endereço — a gente avisa quando estiver no ar.</p>
-    <a href="#" class="btn btn-primary" style="padding:15px 28px;font-size:16px">🍎 Em breve na App Store</a>
+    <p>A Avena está em beta aberto no TestFlight. Entre agora, teste de graça e ajude a moldar a versão final.</p>
+    <div class="store-row">
+      <a href="https://testflight.apple.com/join/uphG8NpK" class="btn btn-tf" style="padding:15px 30px;font-size:16px" target="_blank" rel="noopener">✈️ Entrar no beta (TestFlight)</a>
+    </div>
+    <p class="fineprint">Precisa do app TestFlight da Apple · iPhone com iOS recente · 100% gratuito no beta</p>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ===== FOOTER ===== -->
 <footer class="footer">
   <div class="footer-in">
     <div>
-      <a class="brand" href="/"><img src="assets/logo.png" alt="Avena" style="width:34px;height:34px;border-radius:9px"> Avena</a>
-      <p style="margin-top:12px;max-width:30ch;font-size:14px">Sua agência de viagem com IA, que cuida de tudo, por você.</p>
+      <a class="brand" href="/"><img src="assets/logo.png" alt="Avena"> Avena</a>
+      <p style="margin-top:12px;max-width:30ch;font-size:14px">Sua agente de viagem com IA, que cuida de tudo, por você.</p>
     </div>
-    <div class="fcol"><b>Produto</b><a href="#como">Como funciona</a><a href="#recursos">Recursos</a><a href="#baixar">Baixar o app</a></div>
-    <div class="fcol"><b>Legal & ajuda</b><a href="/privacidade.html">Política de Privacidade</a><a href="/termos.html">Termos de Uso</a><a href="/suporte.html">Suporte</a></div>
+    <div class="fcol"><b>Produto</b><a href="#como">Como funciona</a><a href="#telas">Por dentro</a><a href="#aovivo">Ao vivo</a><a href="#recursos">Recursos</a></div>
+    <div class="fcol"><b>Começar</b><a href="https://testflight.apple.com/join/uphG8NpK" target="_blank" rel="noopener">Entrar no beta</a><a href="#avena">A Avena</a></div>
+    <div class="fcol"><b>Legal &amp; ajuda</b><a href="/privacidade.html">Política de Privacidade</a><a href="/termos.html">Termos de Uso</a><a href="/suporte.html">Suporte</a></div>
   </div>
   <div class="footer-bottom">
     <span>© 2026 Mauricio Marques Miguel · Avena</span>
